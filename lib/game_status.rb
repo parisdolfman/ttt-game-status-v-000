@@ -45,7 +45,7 @@ full?(board) || won?(board) || draw?(board)
 end
 
 def winner(board)
-   winning = won?(board)
+   if winning = won?(board)
    board[winning[0]]
 
 end
